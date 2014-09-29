@@ -23,13 +23,13 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class TreasureHuntViewController: UIViewController, MKMapViewDelegate {
   
     @IBOutlet var mapView : MKMapView!
     
-    var treasures: [Treasure] = []
-    var foundLocations: [GeoLocation] = []
-    var polyline: MKPolyline!
+    private var treasures: [Treasure] = []
+    private var foundLocations: [GeoLocation] = []
+    private var polyline: MKPolyline!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +80,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
 }
 
-extension ViewController: MKMapViewDelegate {
+extension TreasureHuntViewController: MKMapViewDelegate {
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         
         if let treasure = annotation as? Treasure {
@@ -118,7 +118,7 @@ extension ViewController: MKMapViewDelegate {
         }
     }
     
-    func markTreasureAsFound(treasure: Treasure) {
+    private func markTreasureAsFound(treasure: Treasure) {
         if let index = find(self.foundLocations, treasure.location) {
             let alert = UIAlertController(title: "Oops!", message: "You've already found this treasure (at step \(index + 1))! Try again!", preferredStyle: .Alert)
             

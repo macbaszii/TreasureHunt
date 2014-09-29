@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C982FA1C194DAB5E00EFCAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C982FA1B194DAB5E00EFCAFD /* AppDelegate.swift */; };
-		C982FA1E194DAB5E00EFCAFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C982FA1D194DAB5E00EFCAFD /* ViewController.swift */; };
+		C982FA1E194DAB5E00EFCAFD /* TreasureHuntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C982FA1D194DAB5E00EFCAFD /* TreasureHuntViewController.swift */; };
 		C982FA21194DAB5E00EFCAFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C982FA1F194DAB5E00EFCAFD /* Main.storyboard */; };
 		C982FA23194DAB5E00EFCAFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C982FA22194DAB5E00EFCAFD /* Images.xcassets */; };
 		C982FA2F194DAB5F00EFCAFD /* TreasureHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C982FA2E194DAB5F00EFCAFD /* TreasureHuntTests.swift */; };
@@ -30,7 +30,7 @@
 		C982FA16194DAB5E00EFCAFD /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C982FA1A194DAB5E00EFCAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C982FA1B194DAB5E00EFCAFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C982FA1D194DAB5E00EFCAFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C982FA1D194DAB5E00EFCAFD /* TreasureHuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntViewController.swift; sourceTree = "<group>"; };
 		C982FA20194DAB5E00EFCAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C982FA22194DAB5E00EFCAFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C982FA28194DAB5F00EFCAFD /* TreasureHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				C982FA1B194DAB5E00EFCAFD /* AppDelegate.swift */,
-				C982FA1D194DAB5E00EFCAFD /* ViewController.swift */,
+				C982FA1D194DAB5E00EFCAFD /* TreasureHuntViewController.swift */,
 				C982FA1F194DAB5E00EFCAFD /* Main.storyboard */,
 				C982FA22194DAB5E00EFCAFD /* Images.xcassets */,
 				DD65FE6019D9280B00D15487 /* Treasure.swift */,
@@ -215,7 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD65FE6319D9280B00D15487 /* GeoLocation.swift in Sources */,
-				C982FA1E194DAB5E00EFCAFD /* ViewController.swift in Sources */,
+				C982FA1E194DAB5E00EFCAFD /* TreasureHuntViewController.swift in Sources */,
 				C982FA1C194DAB5E00EFCAFD /* AppDelegate.swift in Sources */,
 				DD65FE6219D9280B00D15487 /* Treasure.swift in Sources */,
 			);
