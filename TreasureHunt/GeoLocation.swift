@@ -20,4 +20,11 @@ struct GeoLocation {
     var mapPoint: MKMapPoint {
         return MKMapPointForCoordinate(self.coordinate)
     }
+    
+    func distanceBetween(other: GeoLocation) -> CLLocationDistance {
+        let locationA = CLLocation(latitude: self.latitude, longitude: self.longitude)
+        let locationB = CLLocation(latitude: other.latitude, longitude: other.longitude)
+        
+        return locationA.distanceFromLocation(locationB)
+    }
 }
