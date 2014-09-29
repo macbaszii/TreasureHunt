@@ -28,3 +28,12 @@ struct GeoLocation {
         return locationA.distanceFromLocation(locationB)
     }
 }
+
+extension GeoLocation: Equatable {
+    
+}
+
+func ==(lhs: GeoLocation, rhs: GeoLocation) -> Bool {
+    return lhs.latitude == rhs.latitude &&
+        lhs.longitude == rhs.longitude
+}
